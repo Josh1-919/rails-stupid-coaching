@@ -1,0 +1,11 @@
+<%# display the question asked  %>
+<h1>Stupid Coaching:</h1>
+<%   %> <%# (er) %>
+<p class = question ><%= params[:question]%> - you</p> <%# (pe) %>
+
+
+<%# display the coach's answer  %>
+
+<p class = coach ><%= @answer %>- your coach</p>
+
+<a><%= link_to "ask another question", ask_path%></a>
